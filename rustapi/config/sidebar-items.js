@@ -1,0 +1,1 @@
+window.SIDEBAR_ITEMS = {"fn":["any_err","from_lua_value","get_or_create_module","get_or_create_sub_module","load_config","register","set_max_age","set_max_spare","set_max_use","set_policy_path"],"struct":["LuaConfig"],"type":["RegisterFunc"]};

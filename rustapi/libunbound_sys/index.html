@@ -1,0 +1,184 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="generator" content="rustdoc"><meta name="description" content="API documentation for the Rust `libunbound_sys` crate."><title>libunbound_sys - Rust</title><link rel="preload" as="font" type="font/woff2" crossorigin href="../static.files/SourceSerif4-Regular-46f98efaafac5295.ttf.woff2"><link rel="preload" as="font" type="font/woff2" crossorigin href="../static.files/FiraSans-Regular-018c141bf0843ffd.woff2"><link rel="preload" as="font" type="font/woff2" crossorigin href="../static.files/FiraSans-Medium-8f9a781e4970d388.woff2"><link rel="preload" as="font" type="font/woff2" crossorigin href="../static.files/SourceCodePro-Regular-562dcc5011b6de7d.ttf.woff2"><link rel="preload" as="font" type="font/woff2" crossorigin href="../static.files/SourceSerif4-Bold-a2c9cd1067f8b328.ttf.woff2"><link rel="preload" as="font" type="font/woff2" crossorigin href="../static.files/SourceCodePro-Semibold-d899c5a5c4aeb14a.ttf.woff2"><link rel="stylesheet" href="../static.files/normalize-76eba96aa4d2e634.css"><link rel="stylesheet" href="../static.files/rustdoc-9bb858ba049f1f21.css" id="mainThemeStyle"><meta name="rustdoc-vars" data-root-path="../" data-static-root-path="../static.files/" data-current-crate="libunbound_sys" data-themes="" data-resource-suffix="" data-rustdoc-version="1.72.1 (d5c2e9c34 2023-09-13)" data-channel="1.72.1" data-search-js="search-f6292fe389d70017.js" data-settings-js="settings-de11bff964e9d4e5.js" data-settings-css="settings-8c76f75bfb6bd192.css" data-theme-light-css="light-0f8c037637f9eb3e.css" data-theme-dark-css="dark-1097f8e92a01e3cf.css" data-theme-ayu-css="ayu-614652228113ac93.css" ><script src="../static.files/storage-59fd9b8ccb335783.js"></script><script defer src="../crates.js"></script><script defer src="../static.files/main-0795b7d26be81095.js"></script><noscript><link rel="stylesheet" media="(prefers-color-scheme:light)" href="../static.files/light-0f8c037637f9eb3e.css"><link rel="stylesheet" media="(prefers-color-scheme:dark)" href="../static.files/dark-1097f8e92a01e3cf.css"><link rel="stylesheet" href="../static.files/noscript-13285aec31fa243e.css"></noscript><link rel="alternate icon" type="image/png" href="../static.files/favicon-16x16-8b506e7a72182f1c.png"><link rel="alternate icon" type="image/png" href="../static.files/favicon-32x32-422f7d1d52889060.png"><link rel="icon" type="image/svg+xml" href="../static.files/favicon-2c020d218678b618.svg"></head><body class="rustdoc mod crate"><!--[if lte IE 11]><div class="warning">This old browser is unsupported and will most likely display funky things.</div><![endif]--><nav class="mobile-topbar"><button class="sidebar-menu-toggle">&#9776;</button><a class="logo-container" href="../libunbound_sys/index.html"><img class="rust-logo" src="../static.files/rust-logo-151179464ae7ed46.svg" alt="logo"></a><h2></h2></nav><nav class="sidebar"><a class="logo-container" href="../libunbound_sys/index.html"><img class="rust-logo" src="../static.files/rust-logo-151179464ae7ed46.svg" alt="logo"></a><h2 class="location"><a href="#">Crate libunbound_sys</a></h2><div class="sidebar-elems"><ul class="block"><li class="version">Version 0.1.0</li><li><a id="all-types" href="all.html">All Items</a></li></ul><section><ul class="block"><li><a href="#structs">Structs</a></li><li><a href="#constants">Constants</a></li><li><a href="#functions">Functions</a></li><li><a href="#types">Type Definitions</a></li></ul></section></div></nav><main><div class="width-limiter"><nav class="sub"><form class="search-form"><span></span><input class="search-input" name="search" aria-label="Run search in the documentation" autocomplete="off" spellcheck="false" placeholder="Click or press ‘S’ to search, ‘?’ for more options…" type="search"><div id="help-button" title="help" tabindex="-1"><a href="../help.html">?</a></div><div id="settings-menu" tabindex="-1"><a href="../settings.html" title="settings"><img width="22" height="22" alt="Change settings" src="../static.files/wheel-7b819b6101059cd0.svg"></a></div></form></nav><section id="main-content" class="content"><div class="main-heading"><h1>Crate <a class="mod" href="#">libunbound_sys</a><button id="copy-path" title="Copy item path to clipboard"><img src="../static.files/clipboard-7571035ce49a181d.svg" width="19" height="18" alt="Copy item path"></button></h1><span class="out-of-band"><a class="srclink" href="../src/libunbound_sys/lib.rs.html#3-486">source</a> · <button id="toggle-all-docs" title="collapse all docs">[<span>&#x2212;</span>]</button></span></div><h2 id="structs" class="small-section-header"><a href="#structs">Structs</a></h2><ul class="item-table"><li><div class="item-name"><a class="struct" href="struct.ub_ctx.html" title="struct libunbound_sys::ub_ctx">ub_ctx</a></div><div class="desc docblock-short">The validation context is created to hold the resolver status,
+validation keys and a small cache (containing messages, rrsets,
+roundtrip times, trusted keys, lameness information).</div></li><li><div class="item-name"><a class="struct" href="struct.ub_result.html" title="struct libunbound_sys::ub_result">ub_result</a></div><div class="desc docblock-short">The validation and resolution results.
+Allocated by the resolver, and need to be freed by the application
+with ub_resolve_free().</div></li><li><div class="item-name"><a class="struct" href="struct.ub_server_stats.html" title="struct libunbound_sys::ub_server_stats">ub_server_stats</a></div><div class="desc docblock-short">per worker statistics.</div></li><li><div class="item-name"><a class="struct" href="struct.ub_shm_stat_info.html" title="struct libunbound_sys::ub_shm_stat_info">ub_shm_stat_info</a></div><div class="desc docblock-short">Some global statistics that are not in struct stats_info,
+this struct is shared on a shm segment (shm-key in unbound.conf)</div></li><li><div class="item-name"><a class="struct" href="struct.ub_shm_stat_info__bindgen_ty_1.html" title="struct libunbound_sys::ub_shm_stat_info__bindgen_ty_1">ub_shm_stat_info__bindgen_ty_1</a></div></li><li><div class="item-name"><a class="struct" href="struct.ub_shm_stat_info__bindgen_ty_2.html" title="struct libunbound_sys::ub_shm_stat_info__bindgen_ty_2">ub_shm_stat_info__bindgen_ty_2</a></div></li><li><div class="item-name"><a class="struct" href="struct.ub_stats_info.html" title="struct libunbound_sys::ub_stats_info">ub_stats_info</a></div><div class="desc docblock-short">Statistics to send over the control pipe when asked
+This struct is made to be memcopied, sent in binary.
+shm mapped with (number+1) at num_threads+1, with first as total</div></li></ul><h2 id="constants" class="small-section-header"><a href="#constants">Constants</a></h2><ul class="item-table"><li><div class="item-name"><a class="constant" href="constant.UB_STATS_BUCKET_NUM.html" title="constant libunbound_sys::UB_STATS_BUCKET_NUM">UB_STATS_BUCKET_NUM</a></div></li><li><div class="item-name"><a class="constant" href="constant.UB_STATS_OPCODE_NUM.html" title="constant libunbound_sys::UB_STATS_OPCODE_NUM">UB_STATS_OPCODE_NUM</a></div></li><li><div class="item-name"><a class="constant" href="constant.UB_STATS_QCLASS_NUM.html" title="constant libunbound_sys::UB_STATS_QCLASS_NUM">UB_STATS_QCLASS_NUM</a></div></li><li><div class="item-name"><a class="constant" href="constant.UB_STATS_QTYPE_NUM.html" title="constant libunbound_sys::UB_STATS_QTYPE_NUM">UB_STATS_QTYPE_NUM</a></div></li><li><div class="item-name"><a class="constant" href="constant.UB_STATS_RCODE_NUM.html" title="constant libunbound_sys::UB_STATS_RCODE_NUM">UB_STATS_RCODE_NUM</a></div></li><li><div class="item-name"><a class="constant" href="constant.UB_STATS_RPZ_ACTION_NUM.html" title="constant libunbound_sys::UB_STATS_RPZ_ACTION_NUM">UB_STATS_RPZ_ACTION_NUM</a></div></li><li><div class="item-name"><a class="constant" href="constant.ub_ctx_err_UB_AFTERFINAL.html" title="constant libunbound_sys::ub_ctx_err_UB_AFTERFINAL">ub_ctx_err_UB_AFTERFINAL</a></div><div class="desc docblock-short">cfg change after finalize()</div></li><li><div class="item-name"><a class="constant" href="constant.ub_ctx_err_UB_FORKFAIL.html" title="constant libunbound_sys::ub_ctx_err_UB_FORKFAIL">ub_ctx_err_UB_FORKFAIL</a></div><div class="desc docblock-short">fork() failed</div></li><li><div class="item-name"><a class="constant" href="constant.ub_ctx_err_UB_INITFAIL.html" title="constant libunbound_sys::ub_ctx_err_UB_INITFAIL">ub_ctx_err_UB_INITFAIL</a></div><div class="desc docblock-short">initialization failed (bad settings)</div></li><li><div class="item-name"><a class="constant" href="constant.ub_ctx_err_UB_NOERROR.html" title="constant libunbound_sys::ub_ctx_err_UB_NOERROR">ub_ctx_err_UB_NOERROR</a></div><div class="desc docblock-short">no error</div></li><li><div class="item-name"><a class="constant" href="constant.ub_ctx_err_UB_NOID.html" title="constant libunbound_sys::ub_ctx_err_UB_NOID">ub_ctx_err_UB_NOID</a></div><div class="desc docblock-short">error async_id does not exist or result already been delivered</div></li><li><div class="item-name"><a class="constant" href="constant.ub_ctx_err_UB_NOMEM.html" title="constant libunbound_sys::ub_ctx_err_UB_NOMEM">ub_ctx_err_UB_NOMEM</a></div><div class="desc docblock-short">alloc failure</div></li><li><div class="item-name"><a class="constant" href="constant.ub_ctx_err_UB_PIPE.html" title="constant libunbound_sys::ub_ctx_err_UB_PIPE">ub_ctx_err_UB_PIPE</a></div><div class="desc docblock-short">error in pipe communication with async bg worker</div></li><li><div class="item-name"><a class="constant" href="constant.ub_ctx_err_UB_READFILE.html" title="constant libunbound_sys::ub_ctx_err_UB_READFILE">ub_ctx_err_UB_READFILE</a></div><div class="desc docblock-short">error reading from file (resolv.conf)</div></li><li><div class="item-name"><a class="constant" href="constant.ub_ctx_err_UB_SERVFAIL.html" title="constant libunbound_sys::ub_ctx_err_UB_SERVFAIL">ub_ctx_err_UB_SERVFAIL</a></div><div class="desc docblock-short">DNS service failed</div></li><li><div class="item-name"><a class="constant" href="constant.ub_ctx_err_UB_SOCKET.html" title="constant libunbound_sys::ub_ctx_err_UB_SOCKET">ub_ctx_err_UB_SOCKET</a></div><div class="desc docblock-short">socket operation. Set to -1, so that if an error from _fd() is
+passed (-1) it gives a socket error.</div></li><li><div class="item-name"><a class="constant" href="constant.ub_ctx_err_UB_SYNTAX.html" title="constant libunbound_sys::ub_ctx_err_UB_SYNTAX">ub_ctx_err_UB_SYNTAX</a></div><div class="desc docblock-short">syntax error</div></li></ul><h2 id="functions" class="small-section-header"><a href="#functions">Functions</a></h2><ul class="item-table"><li><div class="item-name"><a class="fn" href="fn.ub_cancel.html" title="fn libunbound_sys::ub_cancel">ub_cancel</a><sup title="unsafe function">⚠</sup></div><div class="desc docblock-short">Cancel an async query in progress.
+Its callback will not be called.</div></li><li><div class="item-name"><a class="fn" href="fn.ub_ctx_add_ta.html" title="fn libunbound_sys::ub_ctx_add_ta">ub_ctx_add_ta</a><sup title="unsafe function">⚠</sup></div><div class="desc docblock-short">Add a trust anchor to the given context.
+The trust anchor is a string, on one line, that holds a valid DNSKEY or
+DS RR.
+@param ctx: context.
+At this time it is only possible to add trusted keys before the
+first resolve is done.
+@param ta: string, with zone-format RR on one line.
+[domainname] [TTL optional] [type] [class optional] [rdata contents]
+@return 0 if OK, else error.</div></li><li><div class="item-name"><a class="fn" href="fn.ub_ctx_add_ta_autr.html" title="fn libunbound_sys::ub_ctx_add_ta_autr">ub_ctx_add_ta_autr</a><sup title="unsafe function">⚠</sup></div><div class="desc docblock-short">Add trust anchor to the given context that is tracked with RFC5011
+automated trust anchor maintenance.  The file is written to when the
+trust anchor is changed.
+Pass the name of a file that was output from eg. unbound-anchor,
+or you can start it by providing a trusted DNSKEY or DS record on one
+line in the file.
+@param ctx: context.
+At this time it is only possible to add trusted keys before the
+first resolve is done.
+@param fname: filename of file with trust anchor.
+@return 0 if OK, else error.</div></li><li><div class="item-name"><a class="fn" href="fn.ub_ctx_add_ta_file.html" title="fn libunbound_sys::ub_ctx_add_ta_file">ub_ctx_add_ta_file</a><sup title="unsafe function">⚠</sup></div><div class="desc docblock-short">Add trust anchors to the given context.
+Pass name of a file with DS and DNSKEY records (like from dig or drill).
+@param ctx: context.
+At this time it is only possible to add trusted keys before the
+first resolve is done.
+@param fname: filename of file with keyfile with trust anchors.
+@return 0 if OK, else error.</div></li><li><div class="item-name"><a class="fn" href="fn.ub_ctx_async.html" title="fn libunbound_sys::ub_ctx_async">ub_ctx_async</a><sup title="unsafe function">⚠</sup></div><div class="desc docblock-short">Set a context behaviour for asynchronous action.
+@param ctx: context.
+@param dothread: if true, enables threading and a call to resolve_async()
+creates a thread to handle work in the background.
+If false, a process is forked to handle work in the background.
+Changes to this setting after async() calls have been made have
+no effect (delete and re-create the context to change).
+@return 0 if OK, else error.</div></li><li><div class="item-name"><a class="fn" href="fn.ub_ctx_config.html" title="fn libunbound_sys::ub_ctx_config">ub_ctx_config</a><sup title="unsafe function">⚠</sup></div><div class="desc docblock-short">setup configuration for the given context.
+@param ctx: context.
+@param fname: unbound config file (not all settings applicable).
+This is a power-users interface that lets you specify all sorts
+of options.
+For some specific options, such as adding trust anchors, special
+routines exist.
+@return: 0 if OK, else error.</div></li><li><div class="item-name"><a class="fn" href="fn.ub_ctx_create.html" title="fn libunbound_sys::ub_ctx_create">ub_ctx_create</a><sup title="unsafe function">⚠</sup></div><div class="desc docblock-short">Create a resolving and validation context.
+The information from /etc/resolv.conf and /etc/hosts is not utilised by
+default. Use ub_ctx_resolvconf and ub_ctx_hosts to read them.
+@return a new context. default initialisation.
+returns NULL on error.</div></li><li><div class="item-name"><a class="fn" href="fn.ub_ctx_data_add.html" title="fn libunbound_sys::ub_ctx_data_add">ub_ctx_data_add</a><sup title="unsafe function">⚠</sup></div><div class="desc docblock-short">Add localdata to the library local authority info.
+Similar to local-data config statement.
+@param ctx: context.  Is finalized by the routine.
+@param data: the resource record in text format, for example
+“www.example.com IN A 127.0.0.1”
+@return 0 if OK, else error.</div></li><li><div class="item-name"><a class="fn" href="fn.ub_ctx_data_remove.html" title="fn libunbound_sys::ub_ctx_data_remove">ub_ctx_data_remove</a><sup title="unsafe function">⚠</sup></div><div class="desc docblock-short">Remove localdata from the library local authority info.
+@param ctx: context.  Is finalized by the routine.
+@param data: the name to delete all data from, like “www.example.com”.
+@return 0 if OK, else error.</div></li><li><div class="item-name"><a class="fn" href="fn.ub_ctx_debuglevel.html" title="fn libunbound_sys::ub_ctx_debuglevel">ub_ctx_debuglevel</a><sup title="unsafe function">⚠</sup></div><div class="desc docblock-short">Set debug verbosity for the context
+Output is directed to stderr.
+@param ctx: context.
+@param d: debug level, 0 is off, 1 is very minimal, 2 is detailed,
+and 3 is lots.
+@return 0 if OK, else error.</div></li><li><div class="item-name"><a class="fn" href="fn.ub_ctx_debugout.html" title="fn libunbound_sys::ub_ctx_debugout">ub_ctx_debugout</a><sup title="unsafe function">⚠</sup></div><div class="desc docblock-short">Set debug output (and error output) to the specified stream.
+Pass NULL to disable. Default is stderr.
+@param ctx: context.
+@param out: FILE* out file stream to log to.
+Type void* to avoid stdio dependency of this header file.
+@return 0 if OK, else error.</div></li><li><div class="item-name"><a class="fn" href="fn.ub_ctx_delete.html" title="fn libunbound_sys::ub_ctx_delete">ub_ctx_delete</a><sup title="unsafe function">⚠</sup></div><div class="desc docblock-short">Destroy a validation context and free all its resources.
+Outstanding async queries are killed and callbacks are not called for them.
+@param ctx: context to delete.</div></li><li><div class="item-name"><a class="fn" href="fn.ub_ctx_get_option.html" title="fn libunbound_sys::ub_ctx_get_option">ub_ctx_get_option</a><sup title="unsafe function">⚠</sup></div><div class="desc docblock-short">Get an option from the context.
+@param ctx: context.
+@param opt: option name from the unbound.conf config file format.
+(not all settings applicable). The name excludes the trailing ‘:’
+for example ub_ctx_get_option(ctx, “logfile”, &amp;result);
+This is a power-users interface that lets you specify all sorts
+of options.
+@param str: the string is malloced and returned here. NULL on error.
+The caller must free() the string.  In cases with multiple
+entries (auto-trust-anchor-file), a newline delimited list is
+returned in the string.
+@return 0 if OK else an error code (malloc failure, syntax error).</div></li><li><div class="item-name"><a class="fn" href="fn.ub_ctx_hosts.html" title="fn libunbound_sys::ub_ctx_hosts">ub_ctx_hosts</a><sup title="unsafe function">⚠</sup></div><div class="desc docblock-short">Read list of hosts from the filename given.
+Usually “/etc/hosts”.
+These addresses are not flagged as DNSSEC secure when queried for.</div></li><li><div class="item-name"><a class="fn" href="fn.ub_ctx_print_local_zones.html" title="fn libunbound_sys::ub_ctx_print_local_zones">ub_ctx_print_local_zones</a><sup title="unsafe function">⚠</sup></div><div class="desc docblock-short">Debug routine.  Print the local zone information to debug output.
+@param ctx: context.  Is finalized by the routine.
+@return 0 if OK, else error.</div></li><li><div class="item-name"><a class="fn" href="fn.ub_ctx_resolvconf.html" title="fn libunbound_sys::ub_ctx_resolvconf">ub_ctx_resolvconf</a><sup title="unsafe function">⚠</sup></div><div class="desc docblock-short">Read list of nameservers to use from the filename given.
+Usually “/etc/resolv.conf”. Uses those nameservers as caching proxies.
+If they do not support DNSSEC, validation may fail.</div></li><li><div class="item-name"><a class="fn" href="fn.ub_ctx_set_fwd.html" title="fn libunbound_sys::ub_ctx_set_fwd">ub_ctx_set_fwd</a><sup title="unsafe function">⚠</sup></div><div class="desc docblock-short">Set machine to forward DNS queries to, the caching resolver to use.
+IP4 or IP6 address. Forwards all DNS requests to that machine, which
+is expected to run a recursive resolver. If the proxy is not
+DNSSEC-capable, validation may fail. Can be called several times, in
+that case the addresses are used as backup servers.</div></li><li><div class="item-name"><a class="fn" href="fn.ub_ctx_set_option.html" title="fn libunbound_sys::ub_ctx_set_option">ub_ctx_set_option</a><sup title="unsafe function">⚠</sup></div><div class="desc docblock-short">Set an option for the context.
+@param ctx: context.
+@param opt: option name from the unbound.conf config file format.
+(not all settings applicable). The name includes the trailing ‘:’
+for example ub_ctx_set_option(ctx, “logfile:”, “mylog.txt”);
+This is a power-users interface that lets you specify all sorts
+of options.
+For some specific options, such as adding trust anchors, special
+routines exist.
+@param val: value of the option.
+@return: 0 if OK, else error.</div></li><li><div class="item-name"><a class="fn" href="fn.ub_ctx_set_stub.html" title="fn libunbound_sys::ub_ctx_set_stub">ub_ctx_set_stub</a><sup title="unsafe function">⚠</sup></div><div class="desc docblock-short">Add a stub zone, with given address to send to.  This is for custom
+root hints or pointing to a local authoritative dns server.
+For dns resolvers and the ‘DHCP DNS’ ip address, use ub_ctx_set_fwd.
+This is similar to a stub-zone entry in unbound.conf.</div></li><li><div class="item-name"><a class="fn" href="fn.ub_ctx_set_tls.html" title="fn libunbound_sys::ub_ctx_set_tls">ub_ctx_set_tls</a><sup title="unsafe function">⚠</sup></div><div class="desc docblock-short">Use DNS over TLS to send queries to machines set with ub_ctx_set_fwd().</div></li><li><div class="item-name"><a class="fn" href="fn.ub_ctx_trustedkeys.html" title="fn libunbound_sys::ub_ctx_trustedkeys">ub_ctx_trustedkeys</a><sup title="unsafe function">⚠</sup></div><div class="desc docblock-short">Add trust anchors to the given context.
+Pass the name of a bind-style config file with trusted-keys{}.
+@param ctx: context.
+At this time it is only possible to add trusted keys before the
+first resolve is done.
+@param fname: filename of file with bind-style config entries with trust
+anchors.
+@return 0 if OK, else error.</div></li><li><div class="item-name"><a class="fn" href="fn.ub_ctx_zone_add.html" title="fn libunbound_sys::ub_ctx_zone_add">ub_ctx_zone_add</a><sup title="unsafe function">⚠</sup></div><div class="desc docblock-short">Add a new zone with the zonetype to the local authority info of the
+library.
+@param ctx: context.  Is finalized by the routine.
+@param zone_name: name of the zone in text, “example.com”
+If it already exists, the type is updated.
+@param zone_type: type of the zone (like for unbound.conf) in text.
+@return 0 if OK, else error.</div></li><li><div class="item-name"><a class="fn" href="fn.ub_ctx_zone_remove.html" title="fn libunbound_sys::ub_ctx_zone_remove">ub_ctx_zone_remove</a><sup title="unsafe function">⚠</sup></div><div class="desc docblock-short">Remove zone from local authority info of the library.
+@param ctx: context.  Is finalized by the routine.
+@param zone_name: name of the zone in text, “example.com”
+If it does not exist, nothing happens.
+@return 0 if OK, else error.</div></li><li><div class="item-name"><a class="fn" href="fn.ub_fd.html" title="fn libunbound_sys::ub_fd">ub_fd</a><sup title="unsafe function">⚠</sup></div><div class="desc docblock-short">Get file descriptor. Wait for it to become readable, at this point
+answers are returned from the asynchronous validating resolver.
+Then call the ub_process to continue processing.
+This routine works immediately after context creation, the fd
+does not change.
+@param ctx: context.
+@return: -1 on error, or file descriptor to use select(2) with.</div></li><li><div class="item-name"><a class="fn" href="fn.ub_poll.html" title="fn libunbound_sys::ub_poll">ub_poll</a><sup title="unsafe function">⚠</sup></div><div class="desc docblock-short">Poll a context to see if it has any new results
+Do not poll in a loop, instead extract the fd below to poll for readiness,
+and then check, or wait using the wait routine.
+@param ctx: context.
+@return: 0 if nothing to read, or nonzero if a result is available.
+If nonzero, call ctx_process() to do callbacks.</div></li><li><div class="item-name"><a class="fn" href="fn.ub_process.html" title="fn libunbound_sys::ub_process">ub_process</a><sup title="unsafe function">⚠</sup></div><div class="desc docblock-short">Call this routine to continue processing results from the validating
+resolver (when the fd becomes readable).
+Will perform necessary callbacks.
+@param ctx: context
+@return: 0 if OK, else error.</div></li><li><div class="item-name"><a class="fn" href="fn.ub_resolve.html" title="fn libunbound_sys::ub_resolve">ub_resolve</a><sup title="unsafe function">⚠</sup></div><div class="desc docblock-short">Perform resolution and validation of the target name.
+@param ctx: context.
+The context is finalized, and can no longer accept config changes.
+@param name: domain name in text format (a zero terminated text string).
+@param rrtype: type of RR in host order, 1 is A (address).
+@param rrclass: class of RR in host order, 1 is IN (for internet).
+@param result: the result data is returned in a newly allocated result
+structure. May be NULL on return, return value is set to an error
+in that case (out of memory).
+@return 0 if OK, else error.</div></li><li><div class="item-name"><a class="fn" href="fn.ub_resolve_async.html" title="fn libunbound_sys::ub_resolve_async">ub_resolve_async</a><sup title="unsafe function">⚠</sup></div><div class="desc docblock-short">Perform resolution and validation of the target name.
+Asynchronous, after a while, the callback will be called with your
+data and the result.
+@param ctx: context.
+If no thread or process has been created yet to perform the
+work in the background, it is created now.
+The context is finalized, and can no longer accept config changes.
+@param name: domain name in text format (a string).
+@param rrtype: type of RR in host order, 1 is A.
+@param rrclass: class of RR in host order, 1 is IN (for internet).
+@param mydata: this data is your own data (you can pass NULL),
+and is passed on to the callback function.
+@param callback: this is called on completion of the resolution.
+It is called as:
+void callback(void* mydata, int err, struct ub_result* result)
+with mydata: the same as passed here, you may pass NULL,
+with err: is 0 when a result has been found.
+with result: a newly allocated result structure.
+The result may be NULL, in that case err is set.</div></li><li><div class="item-name"><a class="fn" href="fn.ub_resolve_free.html" title="fn libunbound_sys::ub_resolve_free">ub_resolve_free</a><sup title="unsafe function">⚠</sup></div><div class="desc docblock-short">Free storage associated with a result structure.
+@param result: to free</div></li><li><div class="item-name"><a class="fn" href="fn.ub_strerror.html" title="fn libunbound_sys::ub_strerror">ub_strerror</a><sup title="unsafe function">⚠</sup></div><div class="desc docblock-short">Convert error value to a human readable string.
+@param err: error code from one of the libunbound functions.
+The error codes are from the type enum ub_ctx_err.
+@return pointer to constant text string, zero terminated.</div></li><li><div class="item-name"><a class="fn" href="fn.ub_version.html" title="fn libunbound_sys::ub_version">ub_version</a><sup title="unsafe function">⚠</sup></div><div class="desc docblock-short">Get a version string from the libunbound implementation.
+@return a static constant string with the version number.</div></li><li><div class="item-name"><a class="fn" href="fn.ub_wait.html" title="fn libunbound_sys::ub_wait">ub_wait</a><sup title="unsafe function">⚠</sup></div><div class="desc docblock-short">Wait for a context to finish with results. Calls ub_process() after
+the wait for you. After the wait, there are no more outstanding
+asynchronous queries.
+@param ctx: context.
+@return: 0 if OK, else error.</div></li></ul><h2 id="types" class="small-section-header"><a href="#types">Type Definitions</a></h2><ul class="item-table"><li><div class="item-name"><a class="type" href="type.ub_callback_type.html" title="type libunbound_sys::ub_callback_type">ub_callback_type</a></div><div class="desc docblock-short">Callback for results of async queries.
+The readable function definition looks like:
+void my_callback(void* my_arg, int err, struct ub_result* result);
+It is called with
+void* my_arg: your pointer to a (struct of) data of your choice,
+or NULL.
+int err: if 0 all is OK, otherwise an error occurred and no results
+are forthcoming.
+struct result: pointer to more detailed result structure.
+This structure is allocated on the heap and needs to be
+freed with ub_resolve_free(result);</div></li><li><div class="item-name"><a class="type" href="type.ub_ctx_err.html" title="type libunbound_sys::ub_ctx_err">ub_ctx_err</a></div><div class="desc docblock-short">The error constants</div></li></ul></section></div></main></body></html>
